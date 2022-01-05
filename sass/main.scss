@@ -1,0 +1,19 @@
+@import './utils/placeholders';
+
+@import './base/reset';
+@import './base/comon';
+@import './utils/vars';
+@import './utils/hiden';
+
+@import './components/modal';
+@import './components/container';
+@import './components/btn';
+
+@import './layout/client';
+@import './layout/header';
+@import './layout/hero';
+@import './layout/quality';
+@import './layout/work';
+@import './layout/team';
+@import './layout/portfolio';
+@import './layout/footer';

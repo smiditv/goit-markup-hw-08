@@ -1,0 +1,81 @@
+.hero {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../img/header_phone_1x.jpg);
+  margin-bottom: 94px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: #2f303a;
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+    background-position: center;
+    height: 400px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/header_phone_2x.jpg);
+    }
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 1199px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/header_pl_1x.jpg);
+    width: 768px;
+    height: 400px;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/header_pl_2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+    width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../img/bggg.jpg);
+    margin-bottom: 94px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+    background-color: #2f303a;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../img/Img_ds_2.jpg);
+    }
+  }
+}
+
+.hero__top-text {
+  width: 100%;
+  // margin-bottom: 30px;
+  color: #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 22px;
+  line-height: 60px;
+  letter-spacing: 0.06em;
+  @media screen and (min-width: 320px) {
+    max-width: 480px;
+    height: 84px;
+    font-size: 26px;
+    line-height: 42px;
+
+    margin-top: -80px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3;
+  }
+}

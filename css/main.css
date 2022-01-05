@@ -242,9 +242,9 @@ h2 {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (min-width: 320px) {
   .container {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
@@ -257,6 +257,9 @@ h2 {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
 }
 
@@ -425,6 +428,7 @@ h2 {
 }
 
 .header-list {
+  padding-top: 10px;
   position: relative;
   display: flex;
   font-weight: 500;
@@ -441,6 +445,7 @@ h2 {
 
 .header-list__link {
   display: block;
+  padding-top: 10px;
   padding-bottom: 32px;
   color: #212121;
   position: relative;
@@ -448,6 +453,12 @@ h2 {
 
 .header-list__link:hover, .header-list__link:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-list__link {
+    margin-bottom: 7px;
+  }
 }
 
 .open-menu-btn {
@@ -463,6 +474,12 @@ h2 {
 
 .open-menu-btn:hover, .open-menu-btn:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .open-menu-btn {
+    display: none;
+  }
 }
 
 .carrent::after {
@@ -499,6 +516,7 @@ h2 {
 }
 
 .header__container {
+  margin-top: 10px;
   display: flex;
   margin-right: auto;
 }
@@ -507,13 +525,25 @@ h2 {
 .header-contacts {
   padding-bottom: 32px;
   margin-left: auto;
-  display: flex;
   align-items: center;
 }
 
 @media screen and (max-width: 767px) {
   .header-contacts {
     display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-contacts {
+    list-style: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -528,6 +558,14 @@ h2 {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .contacts {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+}
+
 .mail:hover,
 .mail:focus {
   fill: #2196f3;
@@ -540,6 +578,13 @@ h2 {
   height: 16px;
   width: 20px;
   margin-right: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-header {
+    width: 14px;
+    height: 10px;
+  }
 }
 
 .logo-header {
@@ -732,7 +777,7 @@ h2 {
 @media screen and (min-width: 1200px) {
   .hero {
     max-width: 1600px;
-    width: 1600px;
+    width: 1200px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -754,6 +799,8 @@ h2 {
 }
 
 .hero__top-text {
+  margin-right: auto;
+  margin-left: auto;
   width: 100%;
   color: #ffffff;
   font-family: Roboto;
@@ -766,7 +813,6 @@ h2 {
 
 @media screen and (min-width: 320px) {
   .hero__top-text {
-    max-width: 480px;
     height: 84px;
     font-size: 26px;
     line-height: 42px;
@@ -778,9 +824,13 @@ h2 {
 @media screen and (min-width: 1200px) {
   .hero__top-text {
     margin-bottom: 30px;
+    color: #ffffff;
+    font-family: Roboto;
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.3;
+    line-height: 60px;
+    letter-spacing: 0.06em;
   }
 }
 

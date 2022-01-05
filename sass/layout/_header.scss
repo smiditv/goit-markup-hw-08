@@ -6,6 +6,7 @@
   }
 }
 .header-list {
+  padding-top: 10px;
   position: relative;
   display: flex;
   font-weight: 500;
@@ -18,12 +19,16 @@
 }
 .header-list__link {
   display: block;
+  padding-top: 10px;
   padding-bottom: 32px;
   color: #212121;
   position: relative;
   &:hover,
   &:focus {
     color: #2196f3;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 7px;
   }
 }
 .open-menu-btn {
@@ -38,6 +43,9 @@
   &:hover,
   &:focus {
     color: #2196f3;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }
 
@@ -73,6 +81,7 @@
   align-items: center;
 }
 .header__container {
+  margin-top: 10px;
   display: flex;
   margin-right: auto;
 }
@@ -82,10 +91,17 @@
 .header-contacts {
   padding-bottom: 32px;
   margin-left: auto;
-  display: flex;
+
   align-items: center;
   @media screen and (max-width: 767px) {
     display: none;
+  }
+  @media screen and (max-width: 767px) {
+    list-style: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
   }
 }
 .contacts {
@@ -96,6 +112,13 @@
   &:hover,
   &:focus {
     color: #2196f3;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 14px;
+    margin-top: 10px;
+  }
+  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -110,6 +133,10 @@
   height: 16px;
   width: 20px;
   margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 10px;
+  }
 }
 .logo-header {
   display: block;

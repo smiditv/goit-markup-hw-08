@@ -572,9 +572,24 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts {
+    font-size: 14px;
+  }
+}
+
 .mail:hover,
 .mail:focus {
   fill: #2196f3;
+}
+
+.icon-header1 {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-items: center;
+  color: #757575;
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
 }
 
 .icon-header {
@@ -582,15 +597,8 @@ h2 {
   align-items: center;
   color: #757575;
   height: 16px;
-  width: 20px;
+  width: 12px;
   margin-right: 10px;
-}
-
-@media screen and (min-width: 768px) {
-  .icon-header {
-    width: 14px;
-    height: 10px;
-  }
 }
 
 .logo-header {

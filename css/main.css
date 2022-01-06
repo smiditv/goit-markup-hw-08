@@ -397,6 +397,12 @@ h2 {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .client-container {
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .client-container {
     width: 1200px;
@@ -1198,9 +1204,14 @@ h2 {
 }
 
 .footer {
-  padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 0px) {
+  .footer {
+    padding-top: 60px;
+  }
 }
 
 .contacts-footer {
@@ -1263,7 +1274,6 @@ h2 {
 
 @media screen and (min-width: 0px) {
   .follow {
-    margin-top: 60px;
     font-size: 14px;
     line-height: 16px;
   }
@@ -1363,5 +1373,27 @@ h2 {
   background-color: #2196f3;
   border-radius: 4px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .footer__tab-wrap {
+    align-items: baseline;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199) {
+  .first-part {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .first-part {
+    margin-right: 165px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

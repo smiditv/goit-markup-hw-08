@@ -291,6 +291,7 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .hero__button {
+    margin-top: 30px;
     font-size: 16px;
     font-weight: 700px;
   }
@@ -324,8 +325,10 @@ h2 {
   }
 }
 
-.client__logo:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .client__log:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .logo-icon {
@@ -338,14 +341,6 @@ h2 {
 .client__logo:hover,
 .client__logo:focus {
   fill: #2196f3;
-}
-
-@media screen and (min-width: 0px) {
-  .client__log {
-    max-width: 480px;
-    flex: 0 1 calc(100% / 3 - 15px);
-    min-height: 100px;
-  }
 }
 
 .link-logo {
@@ -384,14 +379,32 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .link-logo {
+    width: 170px;
+    height: 92px;
+  }
+}
+
 .client-container {
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 0px) {
   .client-container {
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    margin-top: 94px;
+    margin-bottom: 94px;
   }
 }
 
@@ -402,11 +415,9 @@ h2 {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .client__log {
-    flex-wrap: wrap;
-    width: calc((100% - 6 * 10px) / 3);
-    margin: 10px;
+    display: inline;
   }
 }
 
@@ -812,7 +823,8 @@ h2 {
 
 @media screen and (min-width: 1200px) {
   .hero__top-text {
-    margin-bottom: 30px;
+    padding-top: 40px;
+    margin-bottom: 50px;
     color: #ffffff;
     font-family: Roboto;
     font-style: normal;
@@ -1208,6 +1220,10 @@ h2 {
   .footer__container {
     text-align: center;
   }
+}
+
+.first-part {
+  display: inline;
 }
 
 .footerweb {

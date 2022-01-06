@@ -19,10 +19,14 @@
     text-align: center;
   }
 }
-// .footer-item {
-//   margin-left: 70px;
-// }
-
+.footer-item {
+  // margin-left: 70px;
+  @media screen and (min-width: 768px) {
+  }
+}
+.first-part {
+  display: inline;
+}
 .footerweb {
   margin-bottom: 20px;
 }

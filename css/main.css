@@ -743,7 +743,7 @@ h2 {
   margin-right: auto;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header_phone_1x.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header_phone1x.jpg);
   margin-bottom: 94px;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -985,7 +985,7 @@ h2 {
 .team {
   width: 100%;
   padding-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 20px;
   background-color: #f5f4fa;
 }
 
@@ -1227,9 +1227,21 @@ h2 {
   justify-content: space-between;
 }
 
-@media screen and (min-width: 0px) {
+@media screen and (max-width: 1199px) {
   .footer__container {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-item {
+    margin-right: 60px;
   }
 }
 
@@ -1344,6 +1356,12 @@ h2 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .online__input {
+    width: 358px;
+  }
+}
+
 .online__form {
   align-items: center;
 }
@@ -1354,7 +1372,7 @@ h2 {
 
 @media screen and (min-width: 0px) {
   .footer-button-pos {
-    padding-top: 20px;
+    padding-top: 46px;
   }
 }
 
@@ -1394,6 +1412,12 @@ h2 {
     margin-right: 165px;
     text-align: center;
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .first-part {
+    margin-right: 70px;
   }
 }
 /*# sourceMappingURL=main.css.map */
